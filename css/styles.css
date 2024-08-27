@@ -1,0 +1,169 @@
+/* ********** Custom Properties ********** */
+:root {
+  --first-color: rgb(225, 219, 200);
+  --first-alpha-color: rgba(225, 219, 200, 0.75);
+  --second-color: rgb(34, 35, 35) ;
+  --second-alpha-color: rgba(34, 35, 35, 0.75);
+  --third-color: rgb(161, 64, 88);
+  --third-alpha-color: rgba(161, 64, 88, 0.75);
+
+  --link-color: rgb(28, 60, 90);
+  --link-alpha-color: rgba(28, 60, 90, 0.75);
+
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-pt-serif: "PT Serif", serif;
+}
+
+/* ********** Reset Styles ********** */
+body {
+  font-family: var(--font-montserrat);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: var(--link-alpha-color);
+}
+
+/* ********** Bootstrap styles ********** */
+a .bi:hover {
+  color: var(--third-alpha-color);
+}
+
+.bg-dark {
+  background-color: var(--first-color) !important;
+}
+
+.bi-cursor-fill,
+.bi-clock-fill,
+.bi-envelope-fill {
+  font-size: 2rem;
+}
+
+.nav-item {
+  padding-left: 0.5rem;
+}
+
+.nav-item:hover {
+  background-color: var(--third-alpha-color);
+}
+
+.nav-link {
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.nav-link:hover {
+  color: var(--third-alpha-color);
+}
+
+.navbar-toggler {
+  border: transparent;
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2834, 35, 35, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28161, 64, 88, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* ********** My styles ********** */
+.bg-gradient-color {
+  background: var(--second-color);
+}
+
+.bg-hero-image {
+  background-image: url("../image/pexels-rdne-7697712.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-second-alpha-color {
+  background-color: var(--second-alpha-color);
+  color: var(--bg-color);
+}
+
+.bg-third-color {
+  color: var(--bs-white);
+  background-color: var(--third-color);
+}
+
+.bg-third-color:hover {
+  color: var(--bs-white);
+  background-color: var(--third-alpha-color);
+}
+
+.bg-transparent {
+  background-color: var(--bs-table-bg);
+}
+
+.border-bright {
+  border: 3px solid var(--bs-white);
+  box-shadow: 
+  0 0 10px rgba(225, 225, 225, 1), 
+  0 0 15px rgba(255, 255, 255, 0.5), 
+  0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.icon-width {
+  width: 6rem;
+  height: 6rem;
+}
+
+.max-width-800 {
+  max-width: 800px;
+}
+
+.text-color-white {
+  color: var(--bs-white);
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .min-vh-md {
+    min-height: 100vh;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+  .min-vh-lg {
+    min-height: 100vh;
+  }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  
+}
