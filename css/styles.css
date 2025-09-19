@@ -86,6 +86,21 @@ a .bi:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+
+.bg-hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bg-hero-image > * {
+  position: relative;
+  z-index: 2;
 }
 
 .bg-second-alpha-color {
@@ -105,6 +120,14 @@ a .bi:hover {
 
 .bg-transparent {
   background-color: var(--bs-table-bg);
+}
+
+.bg-title-h2 {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.bg-opacity img {
+  opacity: 0.5;
 }
 
 .border-bright {
@@ -130,6 +153,10 @@ a .bi:hover {
 
 .transparent {
   background-color: transparent;
+}
+
+nav i {
+  font-size: 2rem
 }
 
 
